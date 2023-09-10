@@ -6,10 +6,29 @@
   font-size: 25px;
 }
 
+body {
+  animation: back 10s infinite;
+}
+@keyframes back {
+  0% {
+    background-color: rgb(86, 90, 89);
+  }
+  25% {
+    background-color: rgb(222, 226, 226);
+  }
+  50% {
+    background-color: rgb(94, 94, 94);
+  }
+  75% {
+    background-color: rgb(16, 18, 16);
+  }
+  100% {
+    background-color: rgb(86, 90, 89);
+  }
+}
 body .container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(51deg, #6b0dfb, #fec500, #e800ff);
   padding: 10px;
 }
 body .container .todo-app {
